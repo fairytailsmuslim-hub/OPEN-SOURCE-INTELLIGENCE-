@@ -1,0 +1,32 @@
+{
+  "name": "osint-learn",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@netlify/database": "^2.0.1",
+    "@netlify/identity": "^2.0.0",
+    "drizzle-orm": "^1.0.0-beta.22",
+    "i18next": "^26.4.4",
+    "jspdf": "^4.2.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-i18next": "^17.0.16",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^6.0.2",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.6.5",
+    "@vitejs/plugin-react": "^6.1.2",
+    "drizzle-kit": "^1.0.0-beta.22",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  }
+}
