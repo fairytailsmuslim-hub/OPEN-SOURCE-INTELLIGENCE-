@@ -1,0 +1,49 @@
+version: '3.9'
+
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASS}
+    volumes:
+      - mongo_data:/data/db
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/init.js:ro
+    networks: [osint_net]
+    # Port expose na karo — sirf internal network
+
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      MONGO_URI: mongodb://${MONGO_USER}:${MONGO_PASS}@mongo:27017/osint?authSource=admin
+      NODE_ENV: production
+    depends_on: [mongo]
+    networks: [osint_net]
+    volumes:
+      - ./server/data:/app/data:ro
+    # Port expose na karo — sirf nginx ke through
+
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/osint.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./client/build:/usr/share/nginx/html:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    depends_on: [backend]
+    networks: [osint_net]
+
+volumes:
+  mongo_data:
+
+networks:
+  osint_net:
+    driver: bridge
