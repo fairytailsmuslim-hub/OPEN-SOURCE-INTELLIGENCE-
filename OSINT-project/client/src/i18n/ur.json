@@ -1,0 +1,52 @@
+{
+  "app": {
+    "name": "او ایس آئی این ٹی پلیٹ فارم",
+    "tagline": "سائبر سیکیورٹی انٹیلیجنس"
+  },
+  "nav": {
+    "dashboard": "ڈیش بورڈ",
+    "rooms": "کمرے",
+    "leaderboard": "لیڈر بورڈ",
+    "profile": "پروفائل",
+    "logout": "لاگ آؤٹ"
+  },
+  "auth": {
+    "login": "گوگل سے لاگ ان کریں",
+    "loggingIn": "لاگ ان ہو رہا ہے...",
+    "regionBlocked": "آپ کا علاقہ اس پلیٹ فارم کے لیے مجاز نہیں ہے۔",
+    "regionRestricted": "آپ محدود موڈ میں ہیں۔ کچھ خصوصیات دستیاب نہیں۔"
+  },
+  "rooms": {
+    "title": "کمرے",
+    "tier": "ٹیر",
+    "difficulty": "مشکل",
+    "easy": "آسان",
+    "medium": "درمیانہ",
+    "hard": "مشکل",
+    "timeRemaining": "باقی وقت",
+    "startRoom": "کمرہ شروع کریں",
+    "submitFlag": "فلیگ جمع کریں",
+    "flagPlaceholder": "یہاں فلیگ لکھیں",
+    "correct": "درست!",
+    "incorrect": "غلط فلیگ"
+  },
+  "leaderboard": {
+    "title": "لیڈر بورڈ",
+    "rank": "درجہ",
+    "player": "کھلاڑی",
+    "score": "اسکور",
+    "country": "ملک",
+    "tier": "ٹیر"
+  },
+  "certificate": {
+    "title": "کامیابی کا سرٹیفکیٹ",
+    "download": "ڈاؤن لوڈ کریں",
+    "completed": "مکمل کیا",
+    "verifyAt": "تصدیق کریں"
+  },
+  "errors": {
+    "network": "نیٹ ورک خرابی",
+    "unauthorized": "اجازت نہیں",
+    "tryAgain": "دوبارہ کوشش کریں"
+  }
+}

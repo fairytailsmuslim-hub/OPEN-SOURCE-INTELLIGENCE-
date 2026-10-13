@@ -5,6 +5,18 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 const passport = require('passport');
+// ... existing imports ke baad add karo:
+const { startRoom, submitFlag } = require('./controllers/roomController');
+const { getTop, getMyRank } = require('./controllers/leaderboardController');
+const { issueCertificate, verifyCertificate } = require('./controllers/certController');
+
+// Routes section mein add karo:
+app.post('/api/rooms/:roomId/start', requireAuth, requireAllowedRegion, startRoom);
+app.post('/api/flags/submit', requireAuth, requireAllowedRegion, submitFlag);
+app.get('/api/leaderboard', requireAuth, getTop);
+app.get('/api/leaderboard/me', requireAuth, getMyRank);
+app.get('/api/cert/:tier', requireAuth, requireAllowedRegion, issueCertificate);
+app.get('/api/cert/verify/:certId', verifyCertificate); // public
 
 const { initGeoIP } = require('./utils/geoip');
 const { geofence, requireAllowedRegion } = require('./middleware/geofence');

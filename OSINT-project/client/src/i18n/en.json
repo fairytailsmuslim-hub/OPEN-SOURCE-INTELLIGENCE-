@@ -1,0 +1,20 @@
+{
+  "app": { "name": "OSINT Platform", "tagline": "Cyber Security Intelligence" },
+  "nav": { "dashboard": "Dashboard", "rooms": "Rooms", "leaderboard": "Leaderboard", "profile": "Profile", "logout": "Logout" },
+  "auth": {
+    "login": "Login with Google",
+    "loggingIn": "Logging in...",
+    "regionBlocked": "Your region is not authorized for this platform.",
+    "regionRestricted": "You are in restricted mode. Some features unavailable."
+  },
+  "rooms": {
+    "title": "Rooms", "tier": "Tier", "difficulty": "Difficulty",
+    "easy": "Easy", "medium": "Medium", "hard": "Hard",
+    "timeRemaining": "Time Remaining", "startRoom": "Start Room",
+    "submitFlag": "Submit Flag", "flagPlaceholder": "Enter flag here",
+    "correct": "Correct!", "incorrect": "Wrong flag"
+  },
+  "leaderboard": { "title": "Leaderboard", "rank": "Rank", "player": "Player", "score": "Score", "country": "Country", "tier": "Tier" },
+  "certificate": { "title": "Certificate of Completion", "download": "Download", "completed": "Completed", "verifyAt": "Verify at" },
+  "errors": { "network": "Network error", "unauthorized": "Unauthorized", "tryAgain": "Try again" }
+}

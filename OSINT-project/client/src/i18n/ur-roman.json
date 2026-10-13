@@ -1,0 +1,52 @@
+{
+  "app": {
+    "name": "OSINT Platform",
+    "tagline": "Cyber Security Intelligence"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "rooms": "Kamre",
+    "leaderboard": "Leaderboard",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Google se Login Karein",
+    "loggingIn": "Login ho raha hai...",
+    "regionBlocked": "Aap ka region is platform ke liye authorized nahi hai.",
+    "regionRestricted": "Aap restricted mode mein hain. Kuch features available nahi."
+  },
+  "rooms": {
+    "title": "Kamre",
+    "tier": "Tier",
+    "difficulty": "Mushkil",
+    "easy": "Aasan",
+    "medium": "Darmiyana",
+    "hard": "Mushkil",
+    "timeRemaining": "Baqi Waqt",
+    "startRoom": "Kamra Shuru Karein",
+    "submitFlag": "Flag Jama Karein",
+    "flagPlaceholder": "Yahan flag likhein",
+    "correct": "Durust!",
+    "incorrect": "Ghalat flag"
+  },
+  "leaderboard": {
+    "title": "Leaderboard",
+    "rank": "Darja",
+    "player": "Khilari",
+    "score": "Score",
+    "country": "Mulk",
+    "tier": "Tier"
+  },
+  "certificate": {
+    "title": "Kamyabi ka Certificate",
+    "download": "Download Karein",
+    "completed": "Mukammal kiya",
+    "verifyAt": "Tasdeeq karein"
+  },
+  "errors": {
+    "network": "Network kharabi",
+    "unauthorized": "Ijazat nahi",
+    "tryAgain": "Dobara koshish karein"
+  }
+}
